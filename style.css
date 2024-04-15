@@ -1,0 +1,164 @@
+#title {
+  color: #ffffff;
+  text-align: center;
+}
+
+#subtitle{
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#mc {
+  position: absolute;
+  z-index: 2;
+}
+
+#time {
+  margin: 15px;
+  font-size: 64px;
+  color: #ed7364;
+}
+
+#player-status {
+  align-items: center;
+  font-size: 30px;
+}
+
+#game-status{
+  align-items: center;
+  font-size: 24px;
+}
+
+#time,
+#item-1,
+#item-2,
+#item-3 span {
+  display: block;
+}
+
+#player1 h1 {
+  color: #dc143c;
+}
+
+#player2 h1 {
+  color: #097969;
+}
+
+#player3 h1 {
+  color: #005b96;
+}
+
+#player4 h1 {
+  color: #cc5500;
+}
+
+body {
+  padding: 30px;
+  background-color: #312e2b;
+}
+
+.icon {
+  width: 75px;
+  max-width: 100%;
+  height: auto;
+  margin: 3px;
+  align-items: center;
+}
+
+.board-icon{
+  width: 100%; 
+  max-width: 120px;
+  height: auto;
+}
+
+.board-icon-fixed{
+  position: absolute;
+  width: 100%; 
+  max-width: 120px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.dashboard-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: auto;
+  padding: 2vw;
+}
+
+.status {
+  grid-row: span 2;
+  grid-column: span 1;
+  border: 3px solid #000;
+  border-radius: 12px;
+  background-color: #f6d7b0;
+  margin: 1vw;
+  padding: 2vw;
+  text-align: center;
+  align-content: center;
+}
+
+.player {
+    grid-row: span 1;
+    grid-column: span 1;
+    border: 3px solid #000;
+    border-radius: 12px;
+    background-color: #f6d7b0;
+    margin: 1vw;
+    padding: 2vw;
+    text-align: center;
+}
+
+.board-area {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 130px);
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 12px;
+  background-color: #f6d7b0;
+  margin-top: 2vw;
+  padding: 3vw;
+}
+
+.box {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border: 0.3px solid #454545;
+  border-radius: 12px;
+  background-color: #cdaa7f;
+  margin: 2px;
+  padding: 0.5vw;
+  
+  position: relative; 
+  overflow: hidden; 
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .dashboard-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
