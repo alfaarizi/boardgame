@@ -166,6 +166,8 @@ function movePlayer(rowOffset, colOffset) {
         const previousBox = document.querySelector("#box-" + (currentPlayer.rowPos + 1) + "-" + (currentPlayer.colPos + 1));
         const playerImages = previousBox.querySelectorAll(".board-icon");
 
+        previousBox.style.border = "0.3px solid #454545";
+
         // remove player image
         playerImages.forEach(pl => {
             if(pl.getAttribute('src') === currentPlayer.img){
@@ -340,6 +342,9 @@ function switchToNextPlayer() {
 
     currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
     currentPlayer = players[currentPlayerIndex]
+
+    const currBox = document.querySelector("#box-" + (currentPlayer.rowPos + 1) + "-" + (currentPlayer.colPos + 1));
+    currBox.style.border = "5px solid #c71e1e";
 
     playerStatus.textContent = `${currentPlayer.name}'s turn`
 }
@@ -550,6 +555,8 @@ function placeTile(row, col, imageUrl, imageClass) {
   );
 
 
+
+
   const tileImage = document.createElement("img");
   tileImage.src = imageUrl;
   tileImage.classList.add(imageClass);
@@ -727,5 +734,5 @@ function run() {
 }
 
 run();
-// debug();
+debug();
 
