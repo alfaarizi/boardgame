@@ -1,3 +1,4 @@
+```
 <MUHAMMAD AL FARIZI>
 <OCSWOM>
 Web programming - assignment
@@ -42,3 +43,4 @@ The most serious consequence of a disciplinary offence is dismissal from the uni
 [ ] Home screen: allow the player(s) to specify how much time they want to complete the game, and after the specified time the game ends (1 point)
 [ ] Movement: the step is animated (1 point)
 [ ] Save: The game constantly saves its state in localStorage.(2 points)
+```
